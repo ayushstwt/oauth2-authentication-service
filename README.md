@@ -28,21 +28,7 @@ This Spring Boot application implements OAuth 2.0 authentication with JWT for se
 
 2. **Configure OAuth2 Clients:**
 
-    Update `application.yml` with your Google and GitHub OAuth 2.0 client details.
-
-    ```
-spring.application.name=oauth2-authentication-service
-server.port=8000
-
-#for google
-spring.security.oauth2.client.registration.google.client-id=260252899688-d9om78mkdmtmtfdfb27i3ginalai7o3t.apps.googleusercontent.com
-spring.security.oauth2.client.registration.google.client-secret= //give your secret key
-
-#for github
-spring.security.oauth2.client.registration.github.client-id=Ov23liBMLc5e1ItoONPx
-spring.security.oauth2.client.registration.github.client-secret= //give your secret key
-      
-    ```
+    Update `application.properties` with your Google and GitHub OAuth 2.0 client details.
 
 3. **Build and Run the Application:**
 
@@ -79,8 +65,7 @@ public class MyController {
     }
 }
 
-
-### Key Points Covered:
+###  Key Points Covered:
 - **OAuth 2.0 Integration**: Instructions for setting up Google and GitHub as OAuth 2.0 providers.
 - **Application Configuration**: How to update the `application.yml` file with OAuth credentials.
 - **Basic API Security**: Example on how to secure API endpoints.
